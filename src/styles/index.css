@@ -1,11 +1,14 @@
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.boxes {
+    margin: 25px;
+    font-size: 5rem;
+    background-color: rgb(32, 31, 31);
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+.text-center{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}

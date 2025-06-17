@@ -9,10 +9,13 @@ import "bootstrap"
 import '../styles/index.css'
 
 // components
-import Home from './components/Home';
+import Timer from './components/Timer';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+let counter = 0;
+
+function count() {
+  counter++
+  let string = counter.toString().padStart(6, "0")
+  ReactDOM.createRoot(document.getElementById('root')).render(<Timer string = {string}/>)
+}
+setInterval(count, 1000);
